@@ -1,9 +1,12 @@
-var characater = 
+var character = 
 document.getElementById("character");
 var block = document.getElementById("block");
 function jump(){
-        characater.classList.add("animate");
+    if (!character.classList.contains("animate")) {
+        character.classList.add("animate");
+        }
+        character.classList.add("animate");
         setTimeout(function(){
-            characater.classList.remove("animate");
+            character.classList.remove("animate");
         },500);
 }
